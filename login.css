@@ -1,0 +1,467 @@
+:root{
+    --green-dark: #17391d;
+    --green-mid: #0d3c00;
+    --green-light: #80bd27;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container-fluid{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #f2f8ec;
+    height: 40px;
+}
+
+.info-address{
+    margin: 0 8px;
+}
+
+.info-contact{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 8px;
+}
+
+.vr{
+    border-left: 1px solid #d8d8d8;
+    margin: 0 8px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-logo{
+    margin: 5px 0;
+    width: 30%;
+}
+
+
+
+.menu-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu-items a li {
+    display: inline;
+    margin: 0 10px;
+    color: black;
+}
+
+.menu-info div{
+    display: none;
+    visibility: hidden;
+    margin: 0;
+}
+
+
+
+.btn{
+    padding: 10px 18px;
+    border: none;
+    text-align: center;
+}
+
+
+.btn-green{
+    background-color: var(--green-light);
+    color: #fff;
+}
+
+.btn-rounded{
+    border-radius: 50px;
+}
+
+.introduction-heading{
+   background-image: url("http://redsvn.net/wp-content/uploads/2019/12/planting-trees.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 330px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.introduction-heading p{
+    font-size: 50px;
+    font-family: 'coiny';
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 3.5px;
+ }
+
+ .introduction-content__description{
+     margin: 50px 0;
+ }
+
+ .introduction-content__description p{
+    font-style: italic;
+ }
+
+ .introduction-content__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 100%;
+}
+.introduction-content__img img{
+    width: 200px;
+    height: 150px;
+    margin: 12px;
+    border-radius: 12px;
+    box-shadow: 4px 10px 20px -10px rgba(0,0,0,0.75);
+}
+
+.quality{
+    margin-top: 70px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.quality-introduction{
+    background-color: var(--green-dark);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quality-introduction__img{
+    width: 40%;
+    height: 100%;
+}
+
+.quality-introduction__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.quality-introduction__info{
+    width: 55%;
+    margin-top: 30px;
+}
+
+.quality-introduction__info p{
+    margin: 12px 0;
+}
+
+.quality-introduction__info>p:nth-child(1){
+    text-transform: uppercase;
+    color: #f6e3a3;
+}
+
+.quality-introduction__info>p:nth-child(2){
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.quality-introduction__info hr{
+    margin: 18px 0;
+    width: 10%;
+    height: 3px;
+    background-color: var(--green-light);
+    border: none;
+}
+
+.quality-introduction__info p{
+    color: #fff;
+
+}
+
+.quality-introduction__info>div{
+    margin-top: 32px;
+}
+
+.quality-introduction__info div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.quality-introduction__info div div i{
+    margin: 0 24px;
+    margin-right: 12px;
+    color: var(--green-light);
+}
+
+.quality-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.quality-info .quality-info__customer{ 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin: 0 48px;
+}
+
+.quality-info  .quality-info__heading{
+    margin: 48px 0;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.quality-info__customer--info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.quality-info__customer--info div{
+    display: inline-block;
+    width: 49%;
+}
+
+
+
+.quality-info__customer--info div p{
+    text-align: center;
+    font-weight: 600;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.quality-info__customer--info div p:first-child{
+    font-size: 30px;
+}
+
+.quality-info .quality-info__promise { 
+    background-color: #faf5f2;
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.quality-info .quality-info__promise div{
+    margin: 0 48px;
+}
+
+.quality-info .quality-info__promise div p:last-child{
+    text-align: right;
+    margin-top: 40px;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+}
+
+.quality-info .quality-info__request { 
+    grid-area: 1 / 3 / 2 / 4; 
+    margin: 0 48px;
+}
+
+.quality-info__request form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quality-info__request form > *{
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #111;
+}
+
+.quality-info__request form > *::placeholder{
+    font-style: italic;
+}
+
+.quality-info__request form > .btn{
+    border: none;
+}
+
+.process{
+    background-color: #f4f5f0;
+}
+
+.process>p:first-child{
+    text-align: center;
+    color: #17391d;
+    width: 100%;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.process>p:nth-child(2){
+    text-align: center;
+    color: #17391d;
+    width: 100%;
+    padding: 0 30%;
+    margin-bottom: 50px;
+
+}
+
+.process>.process-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.process>.process-list>.process-listitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.process>.process-list>.process-listitem>.process-listitem__pic{
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px -1px 36px -19px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+}
+
+.process>.process-list>.process-listitem>.process-listitem__pic div{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(5px, -10px);
+    background-color: var(--green-light);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process>.process-list>.process-listitem>.process-listitem__pic p{
+    font-size: 12px;
+    color:#fff;
+}
+
+.process>.process-list>.process-listitem p:nth-child(2){
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.process>.process-list>.process-listitem p:nth-child(3){
+   padding: 0 20px;
+   text-align: center;
+   font-size: 13px;
+   margin-bottom: 50px;
+}
+
+.footer{
+    background-image: linear-gradient(#0d3c00, #0d3c00);
+}
+
+.footer>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>div:first-child img{
+    margin:30px 0;
+}
+
+.footer>div:first-child p{
+    padding: 0 20%;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+.footer>div:first-child ul{
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.footer>div:first-child ul li{
+    color: #fff;
+}
+
+.footer>div:first-child div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.footer>div:first-child div a {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+.footer>div:first-child div i{
+    font-size: 20px;
+    
+}
+
+.footer>div:last-child{
+    background-color: linear-gradient(#0a3000);
+}
+
+.footer>div:last-child div{
+    background-color: linear-gradient(#0a3000);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.footer>div:last-child div p{
+    color: #fff;
+}
